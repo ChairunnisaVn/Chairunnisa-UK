@@ -1,0 +1,195 @@
+:root {
+  --primaryBackgroundColor: rgb(242, 242, 242);
+  --secondaryBackgroundColor: rgb(231, 235, 237);
+  --ThirdBackgroundColor: rgb(64, 64, 64);
+
+  --primaryTextColor: black;
+  --secondaryTextColor: #656d72;
+  --ThirdTextColor: #fff;
+}
+* {
+  font-family: monospace;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondaryBackgroundColor);
+  z-index: 999;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.navbar-list ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.navbar-list ul li {
+  list-style-type: none;
+}
+.navbar-list a,
+.resume button a,
+.card button a {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+}
+.navbar-list a:hover {
+  color: var(--primaryTextColor);
+}
+.resume {
+  display: block;
+  margin: auto 0;
+}
+.resume button,
+.card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.resume button:hover,
+.card button:hover {
+  color: var(--ThirdTextColor);
+  background-color: var(--ThirdBackgroundColor);
+}
+#about {
+  position: relative;
+  top: 50px;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--primaryBackgroundColor);
+  width: 100%;
+}
+.profile-image {
+  width: 50%;
+}
+.profile-image img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.profile-text {
+  padding: 10px;
+  text-align: justify;
+  align-self: center;
+}
+.profile-text p {
+  width: 500px;
+  color: var(--secondaryTextColor);
+}
+#experiences,
+#skills,
+#award {
+  position: relative;
+  top: 50px;
+  left: 0;
+  padding: 20px;
+  background-color: var(--secondaryBackgroundColor);
+  width: 100%;
+}
+.title {
+  display: flex;
+  gap: 1rem;
+}
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: auto 0;
+}
+#content svg {
+  margin-top: 20px;
+}
+#content {
+  display: flex;
+  margin-left: 50px;
+  gap: 1.5rem;
+}
+.content p,
+.content h5 {
+  color: var(--secondaryTextColor);
+}
+#education,
+#interest,
+#contact {
+  position: relative;
+  top: 50px;
+  left: 0;
+  padding: 20px;
+  background-color: var(--primaryBackgroundColor);
+  width: 100%;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.interest-list .card {
+  background-color: var(--secondaryBackgroundColor);
+}
+.skills-list,
+.interest-list,
+.award-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: center;
+}
+.card {
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--primaryBackgroundColor);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.form {
+  display: block;
+  text-align: center;
+}
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 700px;
+}
+input,
+textarea,
+#submit {
+  margin: 20px 0;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 0.1px solid black;
+}
+#submit:hover {
+  color: var(--ThirdTextColor);
+  background-color: var(--ThirdBackgroundColor);
+  border: none;
+}
+footer {
+  margin-bottom: 20px;
+  position: relative;
+  top: 50px;
+  left: 0;
+  padding: 20px;
+  background-color: var(--primaryBackgroundColor);
+  text-align: center;
+  width: 100%;
+}
